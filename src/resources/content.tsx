@@ -1,49 +1,41 @@
-import { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
+import type { About, Blog, Gallery, Home, Newsletter, Person, Social, Work } from "@/types";
+import React, { Fragment } from "react";
 import { Line, Row, Text } from "@once-ui-system/core";
 
 const person: Person = {
-  firstName: "Selene",
-  lastName: "Yu",
-  name: `Selene Yu`,
-  role: "Design Engineer",
+  firstName: "Akshay",
+  lastName: "Salvi",
+  name: "Akshay S. Salvi",
+  role: "Ph.D. Research Scholar | Materials Engineer",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "akshaysunil@iisc.ac.in",
+  location: "Asia/Kolkata",
+  languages: ["English", "Hindi", "Marathi"],
 };
 
 const newsletter: Newsletter = {
-  display: true,
-  title: <>Subscribe to {person.firstName}'s Newsletter</>,
-  description: <>My weekly newsletter about creativity and engineering</>,
+  display: false,
+  title: <>Research Updates</>,
+  description: <>Research publications, patents and materials innovation.</>,
 };
 
 const social: Social = [
-  // Links are automatically displayed.
-  // Import new icons in /once-ui/icons.ts
-  // Set essentials: true for links you want to show on the about page
-  {
-    name: "GitHub",
-    icon: "github",
-    link: "https://github.com/once-ui-system",
-    essential: true,
-  },
   {
     name: "LinkedIn",
     icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
+    link: "https://www.linkedin.com/in/akshay-salvi",
     essential: true,
   },
   {
-    name: "Instagram",
-    icon: "instagram",
-    link: "https://www.instagram.com/once_ui/",
-    essential: false,
+    name: "Google Scholar",
+    icon: "book",
+    link: "https://scholar.google.com/citations?user=YOUR_ID",
+    essential: true,
   },
   {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    name: "ResearchGate",
+    icon: "globe",
+    link: "https://www.researchgate.net/profile/Akshay_Salvi",
     essential: true,
   },
   {
@@ -58,196 +50,288 @@ const home: Home = {
   path: "/",
   image: "/images/og/home.jpg",
   label: "Home",
-  title: `${person.name}'s Portfolio`,
-  description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  title: `${person.name} | Research Portfolio`,
+  description:
+    "Materials Engineer, Polymer Technologist and PhD Research Scholar at IISc Bangalore.",
+  headline: (
+    <>
+      Engineering the Future of
+      <br />
+      Advanced Composite Materials
+    </>
+  ),
   featured: {
     display: true,
     title: (
       <Row gap="12" vertical="center">
-        <strong className="ml-4">Once UI</strong>{" "}
+        <strong>Research Portfolio</strong>
         <Line background="brand-alpha-strong" vert height="20" />
-        <Text marginRight="4" onBackground="brand-medium">
-          Featured work
-        </Text>
+        <Text onBackground="brand-medium">Featured Research</Text>
       </Row>
     ),
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/research",
   },
   subline: (
     <>
-    I'm Selene, a design engineer at <Text as="span" size="xl" weight="strong">ONCE UI</Text>, where I craft intuitive <br /> user experiences. After hours, I build my own projects.
-</>
+      Ph.D. Research Scholar at
+      <Text as="span" size="xl" weight="strong"> IISc Bangalore</Text>
+      <br />
+      Developing sustainable, multifunctional and self-healing composite
+      materials for aerospace applications.
+    </>
   ),
 };
-
 const about: About = {
   path: "/about",
   label: "About",
   title: `About – ${person.name}`,
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
+
   tableOfContent: {
     display: true,
     subItems: false,
   },
+
   avatar: {
     display: true,
   },
+
   calendar: {
-    display: true,
-    link: "https://cal.com",
+    display: false,
+    link: "",
   },
+
   intro: {
     display: true,
     title: "Introduction",
-    description: (
-      <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
-      </>
-    ),
+   description: (
+  <>
+    I am a Ph.D. Research Scholar in the Department of Materials Engineering at
+    the Indian Institute of Science (IISc), Bangalore, specializing in advanced
+    polymer composites and aerospace materials.
+
+    <br />
+    <br />
+
+    My research focuses on Carbon Fiber Reinforced Thermoplastic (CFRTP) and
+    Carbon Fiber Reinforced Vitrimer Epoxy (CFRvE) composites, with emphasis on
+    interface engineering, self-healing systems, nanomaterials, and sustainable
+    multifunctional composite technologies.
+
+    <br />
+    <br />
+
+    I completed my M.Tech from IIT Kharagpur and B.Tech from ICT Mumbai. Through
+    the DAAD-IIT Master's Sandwich Programme, I conducted research at TU Dresden
+    and the Leibniz Institute for Polymer Research (IPF Dresden), Germany.
+
+    <br />
+    <br />
+
+    My work has resulted in 7 peer-reviewed publications, 2 granted patents,
+    and 1 patent application in the fields of advanced composites, vitrimer
+    systems, polymer foams, and nanomaterial-enabled engineering materials.
+  </>
+),
   },
+
   work: {
-    display: true, // set to false to hide this section
-    title: "Work Experience",
+    display: true,
+    title: "Professional Experience",
+
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "JSW Paints Pvt. Ltd.",
+        timeframe: "Jun 2019 – Sep 2020",
+        role: "Graduate Engineer Trainee → Junior Manager (Coil Coatings)",
         achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
+          <>Contributed to scaling production from 400 kL/month to 2000 kL/month.</>,
+          <>Supervised premixing, milling, thinning, tinting and packing operations.</>,
+          <>Coordinated with planning, quality control and dispatch teams.</>,
+          <>Operated Distributed Control Systems (DCS).</>,
+          <>Used SAP GUI for inventory management and material movement.</>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: [],
       },
+
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Leibniz Institute for Polymer Research Dresden (IPF Dresden)",
+        timeframe: "Sep 2021 – Mar 2022",
+        role: "DAAD-IIT Master's Sandwich Programme Scholar",
         achievements: [
-          <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
-          </>,
-          <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
-          </>,
+          <>Conducted Master's thesis research on printable supercapacitor electrodes.</>,
+          <>Worked in the Functional Nanocomposites and Blends Group.</>,
+          <>Developed conductive materials based on PANI and rGO.</>,
+          <>Collaborated with researchers at TU Dresden, Germany.</>,
+        ],
+        images: [],
+      },
+
+      {
+        company: "Raychem RPG Pvt. Ltd.",
+        timeframe: "May 2018 – Aug 2018",
+        role: "Summer Intern",
+        achievements: [
+          <>Studied extrusion and injection molding operations.</>,
+          <>Worked on process establishment of extruded tubes.</>,
+          <>Characterized heat-shrink products and polymer materials.</>,
+          <>Operated Banbury Mixer, Two-Roll Mill and Hot Press equipment.</>,
+        ],
+        images: [],
+      },
+
+      {
+        company: "Bharat Petroleum Corporation Limited (BPCL)",
+        timeframe: "May 2017 – Jun 2017",
+        role: "Trainee",
+        achievements: [
+          <>Studied operations of the Catalytic Cracking Unit.</>,
+          <>Analyzed refinery process utilities and DCS systems.</>,
+          <>Performed material and energy balance calculations.</>,
         ],
         images: [],
       },
     ],
   },
+
   studies: {
-    display: true, // set to false to hide this section
-    title: "Studies",
+    display: true,
+    title: "Education",
+
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Indian Institute of Science (IISc), Bangalore",
+        description: (
+          <>
+            <strong>Ph.D. in Materials Engineering</strong>
+            <br />
+            Research Scholar (2022 – Present)
+            <br />
+            Research Focus: CFRTP, CFRvE, Aerospace Composites and Nanomaterials
+          </>
+        ),
       },
+
       {
-        name: "Build the Future",
-        description: <>Studied online marketing and personal branding.</>,
+        name: "Indian Institute of Technology Kharagpur",
+        description: (
+          <>
+            <strong>M.Tech in Materials Science and Engineering</strong>
+            <br />
+            CGPA: 9.54 / 10
+            <br />
+            DAAD-IIT Master's Sandwich Programme Scholar
+          </>
+        ),
+      },
+
+      {
+        name: "Institute of Chemical Technology (ICT), Mumbai",
+        description: (
+          <>
+            <strong>B.Tech in Polymer Engineering and Technology</strong>
+            <br />
+            Minor: Chemical Engineering
+            <br />
+            CGPA: 7.45 / 10
+          </>
+        ),
       },
     ],
   },
+
   technical: {
-    display: true, // set to false to hide this section
-    title: "Technical skills",
+    display: true,
+    title: "Research & Technical Expertise",
+
     skills: [
       {
-        title: "Figma",
+        title: "Research Interests",
         description: (
-          <>Able to prototype in Figma with Once UI with unnatural speed.</>
+          <>
+            Carbon Fiber Reinforced Polymers (CFRP), Carbon Fiber Reinforced
+            Thermoplastic Polymers (CFRTP), Nanomaterials, EMI Shielding,
+            Polymer Foams, Vitrimer Systems, Self-Healing Composites and
+            Thermoplastic Laminates.
+          </>
         ),
-        tags: [
-          {
-            name: "Figma",
-            icon: "figma",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        tags: [],
+        images: [],
       },
+
       {
-        title: "Next.js",
+        title: "Composite Manufacturing",
         description: (
-          <>Building next gen apps with Next.js + Once UI + Supabase.</>
+          <>
+            Composite Processing, Thermoplastic Laminates, Carbon Fiber
+            Reinforced Composites, Vitrimer Composites, Polymer Processing and
+            Interface Engineering.
+          </>
         ),
-        tags: [
-          {
-            name: "JavaScript",
-            icon: "javascript",
-          },
-          {
-            name: "Next.js",
-            icon: "nextjs",
-          },
-          {
-            name: "Supabase",
-            icon: "supabase",
-          },
-        ],
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/projects/project-01/cover-04.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-        ],
+        tags: [],
+        images: [],
+      },
+
+      {
+        title: "Materials Characterization",
+        description: (
+          <>
+            SEM, DMA, Rheometry, UTM, DSC, TGA, FTIR, XRD, Mechanical Testing,
+            Thermal Analysis and Viscoelastic Characterization.
+          </>
+        ),
+        tags: [],
+        images: [],
+      },
+
+      {
+        title: "Software & Tools",
+        description: (
+          <>
+            OriginPro, SAP GUI, Microsoft Office, Advanced Excel and Scientific
+            Data Analysis.
+          </>
+        ),
+        tags: [],
+        images: [],
+      },
+
+      {
+        title: "Research Achievements",
+        description: (
+          <>
+            7 Peer-Reviewed Publications
+            <br />
+            2 Granted Indian Patents
+            <br />
+            1 Patent Application
+            <br />
+            DAAD-IIT Master's Sandwich Programme Scholar
+            <br />
+            International Research Experience at TU Dresden & IPF Dresden,
+            Germany
+          </>
+        ),
+        tags: [],
+        images: [],
       },
     ],
   },
 };
 
 const blog: Blog = {
-  path: "/blog",
-  label: "Blog",
-  title: "Writing about design and tech...",
-  description: `Read what ${person.name} has been up to recently`,
-  // Create new blog posts by adding a new .mdx file to app/blog/posts
-  // All posts will be listed on the /blog route
+  path: "/patents",
+  label: "Patents",
+  title: "Patents & Intellectual Property",
+  description: "Granted patents and patent applications.",
 };
 
 const work: Work = {
-  path: "/work",
-  label: "Work",
-  title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
-  // Create new project pages by adding a new .mdx file to app/blog/posts
-  // All projects will be listed on the /home and /work routes
+  path: "/research",
+  label: "Research",
+  title: "Research",
+  description:
+    "Advanced polymer composites, vitrimer systems, nanomaterials and aerospace structures.",
 };
 
 const gallery: Gallery = {

@@ -1,0 +1,222 @@
+{
+  "name": "Akshay S. Salvi",
+  "current_affiliation": "Indian Institute of Science (IISc), Bangalore",
+  "location": "Bangalore, India",
+  "contact": {
+    "phone": "+91-XXXXXXXXXX",
+    "emails": [
+      "akshaysunil@iisc.ac.in",
+      "akshayssalvi@gmail.com"
+    ]
+  },
+  "education": [
+    {
+      "institution": "Indian Institute of Science, Bangalore",
+      "degree": "PhD (Research Scholar)",
+      "field": "Materials Engineering",
+      "specialization": "CFRP thermoplastic laminates, nanomaterials",
+      "cgpa": "8.6/10",
+      "status": "Ongoing",
+      "expected_completion": "2027"
+    },
+    {
+      "institution": "Indian Institute of Technology, Kharagpur",
+      "degree": "Master of Technology",
+      "field": "Materials Science and Engineering",
+      "specialization": "Polymer",
+      "cgpa": "9.54/10",
+      "duration": "Sep 2020 - May 2022"
+    },
+    {
+      "institution": "Institute of Chemical Technology, Mumbai",
+      "degree": "Bachelor of Engineering",
+      "field": "Polymer Engineering and Technology",
+      "minor": "Chemical Engineering",
+      "cgpa": "7.45/10",
+      "duration": "Aug 2015 - May 2019"
+    }
+  ],
+  "work_experience": [
+    {
+      "company": "JSW Paints Pvt. Ltd.",
+      "designation": "Graduate Engineer Trainee → Junior Manager (Coil Coatings)",
+      "duration": "Jun 2019 - Sep 2020",
+      "achievements": [
+        "Contributed to scaling production from 400 kL/month to 2000 kL/month"
+      ],
+      "responsibilities": [
+        "Supervised premixing, milling, thinning, tinting and packing operations",
+        "Coordinated with planning, QC and dispatch teams",
+        "Operated Distributed Control System (DCS)",
+        "Maintained production documentation and 5S implementation",
+        "Used SAP GUI for material requisition and goods movement"
+      ]
+    },
+    {
+      "company": "Raychem RPG Pvt. Ltd.",
+      "designation": "Summer Intern",
+      "duration": "May 2018 - Aug 2018",
+      "responsibilities": [
+        "Studied extrusion and injection molding operations",
+        "Worked on process establishment of extruded tubes",
+        "Characterized heat-shrink products",
+        "Handled Banbury mixer, two-roll mill and hot press",
+        "Performed testing using UTM, Melt Flow Indexer and Tinius Olsen instruments"
+      ]
+    },
+    {
+      "company": "Bharat Petroleum Corporation Limited (BPCL)",
+      "designation": "Trainee",
+      "duration": "May 2017 - Jun 2017",
+      "responsibilities": [
+        "Studied Catalytic Cracking Unit operations",
+        "Analyzed process utilities and DCS systems",
+        "Performed material and energy balance calculations"
+      ]
+    }
+  ],
+  "research_interests": [
+    "Carbon Fiber Reinforced Polymer (CFRP)",
+    "Carbon Fiber Reinforced Thermoplastic Polymer (CFRTP)",
+    "Nanomaterials",
+    "EMI Shielding",
+    "Polymer Foams",
+    "Vitrimer Epoxy Systems",
+    "Self-Healing Composites",
+    "Thermoplastic Laminates"
+  ],
+  "current_research": {
+    "institution": "IISc Bangalore",
+    "supervisors": [
+      "Prof. Subodh Kumar",
+      "Prof. Suryasarathi Bose"
+    ],
+    "topic": "Engineering the interface of carbon fiber and matrix for advanced thermoplastic laminates"
+  },
+  "publications": [
+    {
+      "title": "Unlocking enhanced properties: surface-engineered carbon fibers via microwave-grown ZnO nanoflakes for advanced thermoplastic composites",
+      "journal": "Nanoscale",
+      "doi": "10.1039/D5NR02785C"
+    },
+    {
+      "title": "Microwave-assisted ZnO-decorated carbon urchin resembling shish-kebab morphology with self-healing and enhanced electromagnetic shielding properties",
+      "journal": "Nanoscale",
+      "doi": "10.1039/D3NR05758E"
+    },
+    {
+      "title": "Improving the Mechanical, Deicing, and Electromagnetic Shielding Properties Using Engineering Interfaces in CF/PEEK Laminates",
+      "journal": "Applied Engineering Materials",
+      "doi": "10.1021/acsaenm.4c00224"
+    },
+    {
+      "title": "Dual dynamic CAN and graphene oxide offer unique synergism in improving mechanical properties and introducing self-healing in carbon fiber composites",
+      "journal": "Composites Part A",
+      "doi": "10.1016/j.compositesa.2025.108959"
+    },
+    {
+      "title": "Triple Dynamic Network-Enabled Vitrimer for Repairable and Recyclable Carbon Fiber-Reinforced Composites",
+      "journal": "Applied Polymer Materials",
+      "doi": "10.1021/acsapm.5c00181"
+    },
+    {
+      "title": "Biochemical Signal-Induced Supramolecular Hydrogelation for Structured Free-Standing Soft Material Formation",
+      "journal": "Macromolecular Bioscience",
+      "doi": "10.1002/mabi.202400419"
+    },
+    {
+      "title": "Infrared Organic Photovoltaic: A Review",
+      "journal": "Research Journal of Engineering and Technology",
+      "doi": "10.5958/2321581X.2017.00025.3"
+    }
+  ],
+  "patents": [
+    {
+      "title": "Method for Synthesizing Flexible and Self-Healing Bio-Based Vitrimer Epoxy Foam",
+      "patent_number": "556992",
+      "application_number": "202441042130",
+      "status": "Granted"
+    },
+    {
+      "title": "Improved Polyetherimide Foam and Method of Preparation Thereof",
+      "patent_number": "576398",
+      "application_number": "202441086715",
+      "status": "Granted"
+    },
+    {
+      "title": "A Multilayered Composite and Methods of Preparation Thereof",
+      "application_number": "202641000286",
+      "status": "Filed"
+    }
+  ],
+  "international_research": [
+    {
+      "institution": "TU Dresden / Leibniz Institute for Polymer Research",
+      "country": "Germany",
+      "duration": "Sep 2021 - Mar 2022",
+      "project": "Printable Supercapacitor Electrodes",
+      "focus": [
+        "Polyaniline (PANI)",
+        "Reduced Graphene Oxide (rGO)",
+        "Energy Storage",
+        "Supercapacitors"
+      ]
+    }
+  ],
+  "certifications": [
+    "Plastic Electronics - Ecole Polytechnique",
+    "Organic Solar Cells Theory and Practice - Technical University of Denmark",
+    "Introduction to Molecular Spectroscopy - University of Manchester",
+    "Programming for Everybody (Python) - University of Michigan",
+    "MS Office & Advanced Excel - Tata Steel"
+  ],
+  "leadership": [
+    {
+      "role": "Hostel & Amenities Secretary",
+      "organization": "Students' Council, IISc Bangalore",
+      "duration": "2025-2026"
+    },
+    {
+      "role": "Student Placement Coordinator",
+      "organization": "Materials Science Centre, IIT Kharagpur",
+      "duration": "2021-2022"
+    },
+    {
+      "role": "President",
+      "organization": "Rotaract Club of King's Circle",
+      "duration": "2017-2018"
+    },
+    {
+      "role": "Design Coordinator",
+      "organization": "TEDxICTMumbai",
+      "duration": "2016-2017"
+    }
+  ],
+  "technical_skills": {
+    "materials_processing": [
+      "Paint formulation",
+      "Polymer processing",
+      "Composite manufacturing"
+    ],
+    "characterization": [
+      "SEM",
+      "DMA",
+      "Rheometry",
+      "UTM",
+      "DSC",
+      "TGA",
+      "FTIR",
+      "XRD"
+    ],
+    "software": [
+      "SAP GUI",
+      "MS Office",
+      "Advanced Excel"
+    ],
+    "testing": [
+      "Mechanical testing",
+      "Thermal analysis",
+      "Viscoelastic characterization"
+    ]
+  }
+}
