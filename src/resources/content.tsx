@@ -9,7 +9,7 @@ const person: Person = {
   role: "Ph.D. Research Scholar | Materials Engineer",
   avatar: "/images/My Picture.jpeg",
   email: "akshaysunil@iisc.ac.in",
-  location: "India | Bangalore",
+  location: "Asia/Kolkata",
   languages: ["English", "Hindi", "Marathi"],
 };
 
