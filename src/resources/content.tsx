@@ -7,9 +7,9 @@ const person: Person = {
   lastName: "Salvi",
   name: "Akshay S. Salvi",
   role: "Ph.D. Research Scholar | Materials Engineer",
-  avatar: "/images/avatar.jpg",
+  avatar: "/images/My Picture.jpeg",
   email: "akshaysunil@iisc.ac.in",
-  location: "Asia/Kolkata",
+  location: "India | Bangalore",
   languages: ["English", "Hindi", "Marathi"],
 };
 
@@ -29,7 +29,7 @@ const social: Social = [
   {
     name: "Google Scholar",
     icon: "book",
-    link: "https://scholar.google.com/citations?user=YOUR_ID",
+    link: "https://share.google/7W6KWAz9mQ93fp6xj",
     essential: true,
   },
   {
